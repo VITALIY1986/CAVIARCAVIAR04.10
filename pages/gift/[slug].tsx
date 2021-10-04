@@ -51,7 +51,7 @@ Productpage.getInitialProps = async function({query}) {
  
    
    let result = res.items.filter(obj=>{
-     return obj.fields.id === query.slug
+     return obj.fields === query.slug
    })
     return {
       gift: result

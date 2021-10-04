@@ -18,7 +18,7 @@ interface IProductProps {
 }
 
 
-const Index = (props) => {
+const Index = (props:IProductProps) => {
  /** console.log(props.option)
    console.log( prop.gift.map(productss => productss.fields.name)  )**/
   return (
@@ -75,13 +75,11 @@ Index.getInitialProps = async function({query}) {
   });
  
   const res = await client.getEntries ({content_type: 'caviar'})
-  const opt = await client.getEntries ({content_type: 'optionGift'})
-  let result = opt.items.map(obj=>{
-    return obj.fields.label
-  })
+  
+  
    return {
      gift: res.items,
-     option: result,
+    
    };
  };
 
