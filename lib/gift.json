@@ -1,0 +1,29 @@
+[
+    {
+        "id": "nextjs_halfmoon",
+        "name": "Gift Box",
+        "price": 25.00,
+        "type": "Amber Caviar",
+        "image": "../static/nycjpg.jpg",
+        "description": "cognized by its large tail that can flare up to 180 degrees.",
+        "option":[
+            { "label": "test1", "serves": "test", "price": 190},
+            { "label": "test1", "serves": "test", "price": 5590},
+            { "label": "test1", "serves": "test", "price": 1190}
+        ]
+    },
+    {
+        "id": "nextjs_halfmoo",
+        "name": "Gift Bo",
+        "price": 25.0,
+        "type": "Amber Caviar",
+        "image": "../static/crowntail.jpg",
+        "description": "cognized by its large tail that can flare up to 180 degrees.",
+        "option":[
+            { "label": "test1", "serves": "test", "price": 190},
+            { "label": "test1", "serves": "test", "price": 5590},
+            { "label": "test1", "serves": "test", "price": 1190}
+        ]
+    }
+                    
+]

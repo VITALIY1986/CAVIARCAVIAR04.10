@@ -1,0 +1,222 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;700&display=swap');
+@layer base {
+    body{
+       @apply bg-black relative
+      
+    }
+
+    h1 {
+        @apply font-oswald1;
+        @apply text-title;
+    }
+    h2, h3, h4, p {
+        @apply font-serif;
+      
+    }
+    h2{  @apply text-normal;
+
+    }
+    p{
+        @apply text-smoll;
+    }
+  
+}
+
+
+@layer components {
+ .btn-find-out {
+    @apply text-white uppercase border rounded-full py-2 px-5 mt-5;
+  }
+  .btn-find-out {
+    @apply text-white uppercase border rounded-full py-2 px-5 mt-5;
+    
+  }
+  .option-value-name span:first-child{
+    @apply flex items-center h-full text-xs leading-4 tracking-normal font-serif text-white ;
+  }
+  .option-value-name .option-price {
+      @apply leading-4 tracking-normal absolute left-auto top-5   right-2 pr-0 text-right font-serif font-bold text-white ;
+    }
+    .option-value-name .option-serves {
+        @apply  leading-4  tracking-wide text-xs absolute right-2 left-auto top-9 pr-0 text-right text-price font-normal;
+    }
+   
+  }
+
+.bg_container::after{
+content: '';
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,0.8130602582830007) 7%, rgba(0,0,0,0.05675773727459732) 29%, rgba(0,212,255,0) 100%);
+
+}
+
+.option-value-name span:first-child {
+   
+   max-width: 80px;
+}
+
+
+.boxed-option input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+input[type="checkbox"], input[type="radio"] {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+.boxed-radio:checked+.option-value-name {
+    background: #fff;
+}
+
+
+.boxed-option input[type="radio"] + span {
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+    border: 1px solid #ffffff;
+    overflow: hidden;
+    margin: 0;
+}
+.option-value-name {
+    vertical-align: middle;
+    position: relative;
+    height: 67px
+}
+.boxed-radio:checked+.option-value-name span {
+    color: #1C1A1B;
+}
+.bg_small{
+height: 70vh;
+
+}
+
+.navbg{
+background: linear-gradient(
+    40deg
+    , #6c572f7a, #000000eb);
+    }
+
+    /**
+* Компоненты аккордеона.
+*/
+.accordion {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding: 0;
+    list-style: none;
+  }
+  .accordion_item {
+    border-bottom: 1px solid #5a95fd;
+  }
+  .accordion_item:last-of-type {
+    border-bottom: none;
+  }
+  /**
+  * Элемент label который запускает открыть/закрыть.
+  */
+  .accordion_trigger {
+    display: block;
+    background-color: #007ccf;
+    color: #ddd;
+    font-weight: normal;
+    cursor: pointer;
+    padding: 1.2em;
+  }
+   
+  /* меняем цвет фона у активного переключателя */
+   
+  .accordion_toggle:checked ~ .accordion_trigger {
+    background-color: #006bb3;
+  }
+   
+  /**
+   * эти элементы radio/checkbox всегда должны быть скрыты.
+   */
+  .accordion_toggle {
+    position: absolute;
+    display: none;
+  }
+  /**
+  * скрытое содержание аккордеона.
+  */
+  .accordion_target {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ddd;
+    color: #444;
+  }
+  /**
+  * когда переключатель checked на radio/checkbox, показать содержимое аккордеона.
+  */    
+  .accordion_toggle:checked ~ .accordion_target {
+    position: static;
+    overflow: visible;
+    clip: auto;
+    margin: auto;
+    padding: 1.2rem;
+    width: auto;
+    height: auto;
+  /* задержка появления  функция анимации */
+    -webkit-animation:fadeIn ease-in 0.5s; 
+    -moz-animation:fadeIn ease-in 0.5s;
+    animation:fadeIn ease-in 0.5s; 
+  }
+  /* анимация при появлении блоков с содержанием */
+  @-moz-keyframes fadeIn {
+      from { opacity: 0; }
+  to { opacity: 1 }
+  }
+  @-webkit-keyframes fadeIn {
+      from { opacity: 0; }
+  to { opacity: 1 }
+  }
+  @keyframes fadeIn {
+      from { opacity: 0; }
+  to { opacity: 1 }
+  }
+
+  input[type=checkbox] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  
+  
+  
+  article ul {
+    display: none;
+    
+  }
+  
+  article input:checked ~ ul {
+    display: block;
+  }
+  
+  article input:checked + label {
+    color: rgb(255, 255, 255);
+  
+  }
+
+  
+
+ 

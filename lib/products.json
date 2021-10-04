@@ -1,0 +1,80 @@
+[
+    {
+        "id": "nextjs_halfmoon",
+        "name": "Kaluga Gold",
+        "price": 25.00,
+        "type": "Amber Caviar",
+        "image": "../static/NY caviar Kaluga Gold.png",
+        "description": "The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees.",
+        "option":[
+            { "label": "test1", "serves": "test", "price": 190},
+            { "label": "test1", "serves": "test", "price": 5590},
+            { "label": "test1", "serves": "test", "price": 1190}
+        ]
+    },
+    {
+        "id": "nextjs_kaluga",
+        "name": "Kaluga Black",
+        "price": 25.00,
+        "type": "Amber Caviar",
+        "image": "../static/NY caviar Kaluga Black.png",
+        "description": "The royal union of the Kaluga and Shassetra sturgeons makes for an exceptional caviar, celebrated the world over for its beautifully balanced flavor.",
+        "option":[
+            { "label": "test1", "serves": "test", "price": 190},
+            { "label": "test1", "serves": "test", "price": 5590},
+            { "label": "test1", "serves": "test", "price": 1190}
+        ]
+    },
+    {
+        "id": "nextjs_amber",
+        "name": "Osetra Gold",
+        "price": 25.00,
+        "type": "Amber Caviar",
+        "image": "../static/NY caviar Osetra Gold.png",
+        "description": "The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees.",
+        "option":[
+            { "label": "test1", "serves": "test", "price": 190},
+            { "label": "test1", "serves": "test", "price": 5590},
+            { "label": "test1", "serves": "test", "price": 1190}
+        ]
+    },
+    {
+        "id": "nextjs_black",
+        "name": "Osetra Black",
+        "price": 25.00,
+        "type": "Amber Caviar",
+        "image": "../static/NY caviar Osetra Black.png",
+        "description": "The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees.",
+        "option":[
+            { "label": "test1", "serves": "test", "price": 190},
+            { "label": "test1", "serves": "test", "price": 5590},
+            { "label": "test1", "serves": "test", "price": 1190}
+        ]
+    },
+    {
+        "id": "nextjs_blac",
+        "name": "Baeriskaya",
+        "price": 25.00,
+        "type": "Baeriskaya",
+        "image": "../static/NY caviar Baeriskaya.png",
+        "description": "The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees.",
+        "option":[
+            { "label": "test1", "serves": "test", "price": 190},
+            { "label": "test1", "serves": "test", "price": 5590},
+            { "label": "test1", "serves": "test", "price": 1190}
+        ]
+    },
+    {
+        "id": "nextjs_blac",
+        "name": "Beluga premium",
+        "price": 25.00,
+        "type": "Beluga premium",
+        "image": "../static/NY caviar Beluga premium.png",
+        "description": "The Halfmoon betta is arguably one of the prettiest betta species. It is recognized by its large tail that can flare up to 180 degrees.",
+        "option":[
+            { "label": "test1", "serves": "test", "price": 190},
+            { "label": "test1", "serves": "test", "price": 5590},
+            { "label": "test1", "serves": "test", "price": 1190}
+        ]
+    }                       
+]

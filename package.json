@@ -1,0 +1,40 @@
+{
+  "name": "snipcart-nextjs",
+  "version": "1.0.0",
+  "description": "snipcart-nextjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snipcart/snipcart-nextjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snipcart/snipcart-nextjs/issues"
+  },
+  "homepage": "https://github.com/snipcart/snipcart-nextjs#readme",
+  "dependencies": {
+    "@types/react": "^16.14.5",
+    "@types/react-dom": "^16.9.12",
+    "@zeit/next-sass": "^1.0.1",
+    "@zeit/next-typescript": "^1.1.1",
+    "contentful": "^9.0.0",
+    "next": "^11.1.2",
+    "node-sass": "^6.0.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9",
+    "tailwindcss": "^2.0.4",
+    "typescript": "^4.2.3"
+  }
+}
