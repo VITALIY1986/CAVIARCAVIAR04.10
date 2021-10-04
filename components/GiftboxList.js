@@ -1,10 +1,8 @@
 import Gift, { IProductg } from "./Giftbox"
 
-interface IProductListProps {
-  gift: IProductg[]
-}
 
-const ProductList = (props: IProductListProps) => {
+
+const ProductList = (props) => {
   return (
     <div className="">
   

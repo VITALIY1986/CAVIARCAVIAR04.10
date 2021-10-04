@@ -1,26 +1,11 @@
 import { useRouter } from 'next/router';
 import Link from "next/link";
 
-export interface IProductg {
-  id: string
-  name: string
-  price: number
-  type:string
-  url: string  
-  description: string
-  image: string
-  option: string
- gift:string
-  fields: any
-  item: any
-  label:string
-}
 
-interface IProductProps {
-  product: IProductg
-}
 
-const Gift = (props: IProductProps) => {
+
+
+const Gift = (props) => {
 
   const router = useRouter()
 
