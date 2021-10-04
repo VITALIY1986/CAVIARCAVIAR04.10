@@ -1,10 +1,10 @@
 import Header from "../components/Header"
 import ProductList from "../components/ProductList"
 import { IProduct } from "../components/Product"
-import Gift,{ IProductg } from "../components/Giftbox"
+import { IProductg } from "../components/Giftbox"
 import Footer from "../components/Footer"
 import Contact from "../components/Contact"
-import giftboxList from "../lib/gift.json"
+
 import GiftboxList from "../components/GiftboxList"
 import Head from "next/head"
 import productList from "../lib/products.json"
@@ -14,11 +14,11 @@ import { createClient } from 'contentful';
 
 interface IProductProps {
   
-  gift: IProductg
+  gift: IProductg[]
 }
 
 
-const Index = (props:IProductProps) => {
+const Index = (props: IProductProps) => {
  /** console.log(props.option)
    console.log( prop.gift.map(productss => productss.fields.name)  )**/
   return (
@@ -75,11 +75,12 @@ Index.getInitialProps = async function({query}) {
   });
  
   const res = await client.getEntries ({content_type: 'caviar'})
-  
+  const opt = await client.getEntries ({content_type: 'optionGift'})
+ 
   
    return {
      gift: res.items,
-    
+     
    };
  };
 

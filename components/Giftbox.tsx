@@ -9,10 +9,11 @@ export interface IProductg {
   url: string  
   description: string
   image: string
-  option: any
+  option: string
  gift:string
   fields: any
   item: any
+  label:string
 }
 
 interface IProductProps {
