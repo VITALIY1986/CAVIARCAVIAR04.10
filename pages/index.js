@@ -16,8 +16,8 @@ import { createClient } from 'contentful';
 
 
 const Index = (props) => {
- console.log(props.option)
-  /**  console.log( prop.gift.map(productss => productss.fields.name)  )**/
+  /**console.log(props.option)
+   console.log( prop.gift.map(productss => productss.fields.name)  )**/
   return (
     <div className="mx-auto ">
       <Head>
@@ -72,14 +72,11 @@ Index.getInitialProps = async function({query}) {
   });
  
   const res = await client.getEntries ({content_type: 'caviar'})
-  const opt = await client.getEntries ({content_type: 'optionGift'})
-  let result = res.items.map(obj=>{
-    return obj.fields.id
-  })
+  
   
    return {
      gift: res.items,
-     option:result
+     
    };
  };
 
